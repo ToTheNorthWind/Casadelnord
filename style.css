@@ -14,6 +14,10 @@ body.light-mode {
     background-color: white;
     color: black
 }
+p {
+ text-align: center;
+ margin-bottom: 10px; 
+}
 img.hidden {
   display: none;
 }
@@ -24,9 +28,18 @@ body.light-mode img {
     height: auto;
 }
 button {
+    display: block;
+    margin: auto;
     padding: 10px 20px;
+    font-size: 16px;
+    background-color: grey
     border: none;
+    color: white;
     cursor: pointer;
     align-items: center;
     margin-bottom 20px;
+    border-radius: 5px;
+}
+button:hover {
+  background-color: #1E90FF;
 }
