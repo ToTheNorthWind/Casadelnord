@@ -5,7 +5,7 @@ const body = document.body;
     const images = document.querySelectorAll("img");
       if (body.classList.contains("light-mode")) {
         images.forEach(image => {
-          Image.style.display = "block";
+          image.style.display = "block";
         });
       } else {
         images.forEach(image  => {
