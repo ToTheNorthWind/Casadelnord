@@ -1,5 +1,4 @@
 body {
-    text-align: center;
     background-color: black;
     color: white;
     margin: 0
@@ -9,6 +8,15 @@ body {
 body.light-mode {
     background-color: white;
     color: black
+}
+img.hidden {
+  display: none;
+}
+body.light-mode img {
+    display: block;
+    margin.top; 20px;
+    max-width 100%;
+    height: auto;
 }
 button {
     padding: 10px 20px;
