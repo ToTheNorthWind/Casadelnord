@@ -1,3 +1,4 @@
+console.log("script.js caricato correttamente");
 document.addEventListener("DOMContentLoaded", function() {
     var button = document.getElementById("btn");
     button.style.backgroundColor = "grey";
