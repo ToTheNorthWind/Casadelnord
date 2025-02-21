@@ -5,9 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll("img");
     images.forEach(function(img) {
       if (document.body.classList.contains("light-mode")) {
-        Img.classList.remove("hidden");
+        images.forEach(image => {
+          Image.classList.remove("hidden");
+        });
       } else {
-        Img.classList.add("hidden");
+        images.forEach(image  => {
+        Imgage.classList.add("hidden");
       }
     });
   });
