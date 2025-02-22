@@ -27,7 +27,7 @@ img.hidden {
 
 .image-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 900px;
@@ -38,23 +38,23 @@ img.hidden {
 .image-container img {
   max-width: 30%;
   height: auto;
-  border: 1px solid blue
+  border: 1px solid blue;
 }
 
 .image-container img:first-child {
-  max-width: 30%
   align-self: flex-start;
+  margin-right: auto;
 }
 
 .image-container img:nth-child(2) {
-  max-width: 30%
   align-self: center;
+  margin: 0 auto;
 }
 
 
 .image-container img:last-child {
-  max-width: 30%
   align-self: flex-end;
+  margin: auto;
 }
 
 @media (max-width: 600px) {
