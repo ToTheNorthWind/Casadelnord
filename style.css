@@ -48,24 +48,26 @@ img.hidden {
 
 .image-container img:nth-child(2) {
   align-self: center;
+  display: block;
   margin: 0 auto;
 }
 
 
 .image-container img:last-child {
   align-self: flex-end;
-  margin: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 600px) {
   .image-container {
     flex-direction: column;
     align-items: center;
-}
+ }
 
 .image-container img {
    max-width: 80%;
    margin-bottom: 10px;
+ }
 }
 
 body.light-mode img {
