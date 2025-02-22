@@ -83,6 +83,8 @@ body.light-mode img {
 }
 
 button {
+  position: absolute;
+  top: 20px;
   display: block;
   margin: auto;
   padding: 10px 20px;
