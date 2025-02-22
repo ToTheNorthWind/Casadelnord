@@ -60,7 +60,10 @@ img.hidden {
 body.light-mode .image-container {
   width: 100%;
   max-width: 900px;
-  border: 1px solid blue
+}
+
+body.light-mode .image-container img {
+  border: 1px solid blue;
 }
 
 @media (max-width: 600px) {
