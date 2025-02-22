@@ -28,7 +28,7 @@ img.hidden {
 .image-container {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   margin-top: 20px;
   flex-wrap: wrap;
 }
@@ -74,7 +74,6 @@ button:hover {
   background-color: #1E90FF;
 }
 
-/* Nuove regole per il bottone che porta alla home page in pagina1 */
 .button-link {
     display: inline-block;
     padding: 10px 20px;
