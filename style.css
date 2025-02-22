@@ -37,6 +37,7 @@ img.hidden {
 .image-container img {
   max-width: 45%;
   height: auto;
+  align-items: center;
   border: 1px solid blue
 }
 
