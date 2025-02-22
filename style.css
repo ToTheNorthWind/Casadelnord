@@ -30,7 +30,7 @@ img.hidden {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 700px
+  max-width: 700px;
   margin-top: 20px auto;
 }
 
@@ -91,4 +91,21 @@ button:hover {
 
 .button-link:hover {
     background-color: #1E90FF;
+}
+
+.pagina1 {
+  background-color: white;
+  color: black;
+}
+
+.immagine-pagina {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.pagina1 .bottone-home {
+  background-color: blue;
+  color: white;
 }
