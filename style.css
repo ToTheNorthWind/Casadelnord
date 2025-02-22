@@ -38,7 +38,6 @@ img.hidden {
 .image-container img {
   max-width: 0%;
   height: auto;
-  border: 1px solid blue;
 }
 
 .image-container img:first-child {
@@ -61,6 +60,7 @@ img.hidden {
 body.light-mode .image-container {
   width: 100%;
   max-width: 900px;
+  border: 1px solid blue
 }
 
 @media (max-width: 600px) {
