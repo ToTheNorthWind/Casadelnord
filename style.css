@@ -27,18 +27,27 @@ img.hidden {
 
 .image-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 700px;
-  margin-top: 20px auto;
+  margin: 20px auto;
+  gap: 20px;
 }
 
 .image-container img {
   max-width: 45%;
   height: auto;
-  align-items: center;
   border: 1px solid blue
+}
+
+.image-container img:first-child {
+  max-width: 30%
+  align-self: flex-start;
+}
+
+. image-container img:last-child {
+  max-width: 50%align-self: center;
 }
 
 @media (max-width: 600px) {
