@@ -16,6 +16,10 @@ body.light-mode {
   color: black;
 }
 
+body.light-mode .titolo::after {
+  content: ". Storia della scienza prima dell'elettronica";
+}
+
 p {
   text-align: center;
   margin-bottom: 10px; 
