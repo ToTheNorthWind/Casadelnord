@@ -28,7 +28,7 @@ img.hidden {
 .image-container {
   display: flex;
   justify-content: space-between;
-  width: 80%
+  width: 80%;
   margin-top: 20px;
   flex-wrap: wrap;
 }
@@ -44,8 +44,8 @@ img.hidden {
     align-items: center;
 }
 
-.image container img {
-   max-width: 80%
+.image-container img {
+   max-width: 80%;
    margin-bottom: 10px;
 }
 

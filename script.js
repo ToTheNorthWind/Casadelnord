@@ -5,5 +5,4 @@ const imageContainer = document.querySelector(".image-container");
 toggleButton.addEventListener("click", function() {
     body.classList.toggle("light-mode");
     imageContainer.classList.toggle("hidden")
-    });
 });
