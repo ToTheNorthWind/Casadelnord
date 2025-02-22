@@ -58,6 +58,11 @@ img.hidden {
   margin-left: auto;
 }
 
+body.light-mode .image-container {
+  width: 100%;
+  max-width: 900px;
+}
+
 @media (max-width: 600px) {
   .image-container {
     flex-direction: column;
