@@ -46,7 +46,7 @@ img.hidden {
   align-self: flex-start;
 }
 
-. image-container img:last-child {
+.image-container img:last-child {
   max-width: 50%align-self: center;
 }
 
