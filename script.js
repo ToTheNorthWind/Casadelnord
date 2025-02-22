@@ -1,10 +1,9 @@
 const toggleButton = document.getElementById("toggleButton"); 
 const body = document.body;
+const imageContainer = document.querySelector(".image-container");
 
 toggleButton.addEventListener("click", function() {
     body.classList.toggle("light-mode");
-
-    document.querySelectorAll("img").forEach(image => {
-        image.classList.toggle("hidden");
+    imageContainer.classList.toggle("hidden")
     });
 });

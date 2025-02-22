@@ -25,6 +25,18 @@ img.hidden {
   display: none;
 }
 
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%
+  margin-top: 20px;
+}
+
+.image-container img {
+  max-width: 200px;
+  height: auto;
+}
+
 body.light-mode img {
   display: block;
   margin-top: 20px;
