@@ -150,7 +150,21 @@ button:hover {
   text-align: center;
 }
 
-.immagine-pagina {
+.immagine-pagina1 {
+  max-width: 20%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+.immagine-pagina2 {
+  max-width: 15%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+.immagine-pagina3 {
   max-width: 20%;
   height: auto;
   display: block;
