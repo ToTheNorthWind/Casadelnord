@@ -107,6 +107,27 @@ body.light-mode .image-container img {
   max-width: 600px;
  }
 
+ .immagine-pagina1 {
+  max-width: 0%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+.immagine-pagina2 {
+  max-width: 0%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+.immagine-pagina3 {
+  max-width: 0%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
 }
 
 body.light-mode img {
