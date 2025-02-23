@@ -90,7 +90,7 @@ body.light-mode .image-container img {
  }
 
  body.light-mode .image-container {
-  width: 100%;
+  width: 50%;
   max-width: 600px;
  }
 
