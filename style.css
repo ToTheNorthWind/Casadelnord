@@ -140,19 +140,26 @@ button:hover {
     background-color: #1E90FF;
 }
 
-.pagina1 {
+.pagina1, .pagina2, .pagina3 {
   background-color: white;
   color: black;
 }
 
-.immagine-pagina {
-  max-width: 50%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
+.testo-pagina {
+  margin-top: 100px;
+  text-align: center;
 }
 
-.pagina1 .bottone-home {
+.immagine-pagina {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+.pagina1 .bottone-home,
+.pagina1 .bottone-home,
+.pagina3 .bottone-home {
   background-color: blue;
   color: white;
 }
