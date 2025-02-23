@@ -112,7 +112,7 @@ body.light-mode .image-container img {
 body.light-mode img {
   display: block;
   margin-top: 20px;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
