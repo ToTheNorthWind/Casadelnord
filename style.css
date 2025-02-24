@@ -25,6 +25,10 @@ p {
   margin-bottom: 10px; 
 }
 
+.sottotitolo {
+  display: none;
+}
+
 body.light-mode .sottotitolo {
   display:block;
 }
@@ -49,11 +53,6 @@ body.light-mode .image-container img {
   right: 30px;
   display: inline-block;
 
-}
-
-.image-container img {
-  max-width: 100%;
-  display:none;
 }
 
 .image-description {
