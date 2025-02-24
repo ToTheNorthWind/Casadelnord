@@ -91,20 +91,20 @@ body.light-mode .image-container img {
 .image-container img:first-child {
   align-self: flex-start;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
 }
 
 .image-container img:nth-child(2) {
   align-self: center;
   display: block;
   margin: auto;
-  width: 50%;
+  width: 60%;
 }
 
 .image-container img:last-child {
   align-self: flex-end;
   margin-left: auto;
-  width: 50%;
+  width: 60%;
 }
 
 body.light-mode .image-container {
