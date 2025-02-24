@@ -54,7 +54,7 @@ body.light-mode .image-container img {
 }
 
 .image-container a {
-  position: right: 30px;
+  right: 30px;
   display: inline-block;
 
 }
