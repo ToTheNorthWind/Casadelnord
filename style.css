@@ -92,6 +92,7 @@ body.light-mode .image-container img {
   align-self: flex-start;
   margin-right: auto;
   width: 95%;
+  display: none;
 }
 
 .image-container img:nth-child(2) {
@@ -99,12 +100,14 @@ body.light-mode .image-container img {
   display: block;
   margin: auto;
   width: 90%;
+  display: none;
 }
 
 .image-container img:last-child {
   align-self: flex-end;
   margin-left: auto;
   width: 95%;
+  display: none;
 }
 
 body.light-mode .image-container {
