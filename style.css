@@ -54,8 +54,8 @@ body.light-mode .image-container img {
 }
 
 .image-container a {
-  position: relative;
-  display: none;
+  position: center;
+  display: inline-block;
 
 }
 
