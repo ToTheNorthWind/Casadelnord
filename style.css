@@ -43,12 +43,6 @@ body.light-mode .image-container img {
   height: auto;
 }
 
-.pagina1 .imagine-container img,
-.pagina2 .image-container img,
-.pagina3 .image-container img {
-  display: none !important;
-}
-
 .image-container {
   display: flex;
   justify-content: center;
