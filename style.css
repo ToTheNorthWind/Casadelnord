@@ -42,6 +42,10 @@ body.light-mode .image-container img {
   max-width: 80%;
   height: auto;
 }
+.image-2.jpg {
+  display:block;
+  right: 30%;
+}
 
 .image-container {
   display: flex;
