@@ -25,10 +25,6 @@ p {
   margin-bottom: 10px; 
 }
 
-.sottotitolo {
-  display: none;
-}
-
 body.light-mode .sottotitolo {
   display:block;
 }
