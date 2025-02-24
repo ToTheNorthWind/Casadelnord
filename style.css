@@ -231,6 +231,16 @@ button:hover {
   text-align: center;
 }
 
+body:not(.light-mode) .image-container img {
+  display:none;
+ }
+
+ .pagina1 .immagine-pagina,
+ .pagina2 .immagine-pagina,
+ .pagina3 .immagine-pagina {
+    display: none !important;
+ }
+
 .immagine-pagina1 {
   max-width: 22%;
   height: auto;
