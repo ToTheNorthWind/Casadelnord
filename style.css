@@ -33,8 +33,20 @@ body.light-mode .sottotitolo {
   display:block;
 }
 
-body:not(.lightmode) .image-container img {
+.image-container img {
   display: none;
+}
+
+body.light-mode .image-container img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+}
+
+.pagina1 .imagine-container img,
+.pagina2 .image-container img,
+.pagina3 .image-container img {
+  display: none !important;
 }
 
 .image-container {
@@ -82,12 +94,6 @@ body.light-mode .image-container img {
   border: 1px solid blue;
 }
 
-.pagina1 .immagine-pagina,
-.pagina2 .immagine-pagina,
-.pagina3 .immagine-pagina {
-  display: none !important;
-}
-
 @media (max-width: 600px) {
   body {
     height: auto;
@@ -105,10 +111,6 @@ body.light-mode .image-container img {
     align-items: center;
  }
 
- body.light-mode .image-container {
-  max-width: 600px;
- }
-
 button {
   position: absolute;
   top: 20px;
@@ -118,6 +120,7 @@ button {
   border: none;
   color: white;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 button:hover {
@@ -145,16 +148,4 @@ button:hover {
 .pagina1, .pagina2, .pagina3 {
   background-color: white;
   color: black;
-}
-
-.testo-pagina {
-  margin-top: 100px;
-  text-align: center;
-}
-
-.pagina1 .bottone-home,
-.pagina1 .bottone-home,
-.pagina3 .bottone-home {
-  background-color: blue;
-  color: white;
 }
