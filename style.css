@@ -50,7 +50,7 @@ body.light-mode .image-container img {
 }
 
 .image-container a {
-  right: 30px;
+  position: center;
   display: inline-block;
 
 }
@@ -58,7 +58,7 @@ body.light-mode .image-container img {
 .image-container img {
   max-width: 100%;
   display:none;
-  
+
 }
 .image-description {
 position: absolute;
