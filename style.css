@@ -141,10 +141,14 @@ body.light-mode .image-container img {
    display: none;
  }
 
+ body:not(.light-mode) .image-container img {
+  display:none;
+ }
+
  .pagina1 .immagine-pagina,
  .pagina2 .immagine-pagina,
  .pagina3 .immagine-pagina {
-    display: none;
+    display: none !important;
  }
 
  .image-container img:first-child {
