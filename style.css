@@ -140,8 +140,3 @@ button:hover {
 .button-link:hover {
     background-color: #1E90FF;
 }
-
-.pagina1, .pagina2, .pagina3 {
-  background-color: white;
-  color: black;
-}
