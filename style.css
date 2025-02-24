@@ -33,18 +33,10 @@ body.light-mode .sottotitolo {
   display:block;
 }
 
-.image-container img {
-  display: none;
-}
-
 body.light-mode .image-container img {
   display: block;
   max-width: 80%;
   height: auto;
-}
-.image-2.jpg {
-  display:block;
-  right: 30px;
 }
 
 .image-container {
