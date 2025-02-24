@@ -142,9 +142,31 @@ body.light-mode .image-container img {
     display: none;
  }
 
+ .image-container img:first-child {
+  align-self: flex-start;
+  margin-right: auto;
+  display: none;
+}
+
+.image-container img:nth-child(2) {
+  align-self: center;
+  display: block;
+  margin: 0 auto;
+  display: none;
+}
+
+
+.image-container img:last-child {
+  align-self: flex-end;
+  margin-left: auto;
+  display: none;
+}
+
  body.light-mode .image-container {
   width: 100%;
   max-width: 600px;
+  flex-direction:column;
+  align-items: center;
  }
 }
 
