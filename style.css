@@ -55,6 +55,11 @@ body.light-mode .image-container img {
 
 }
 
+.image-container img {
+  max-width: 100%;
+  display:none;
+  
+}
 .image-description {
 position: absolute;
 bottom: 10px;
