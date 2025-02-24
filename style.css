@@ -33,6 +33,10 @@ body.light-mode .sottotitolo {
   display:block;
 }
 
+body:not(.lightmode) .image-container img {
+  display: none;
+}
+
 img.hidden {
   display: none;
 }
@@ -48,9 +52,15 @@ img.hidden {
   position: relative;
 }
 
+.image-container a {
+  position: relative;
+  display: inline-block;
+}
+
 .image-container img {
-  max-width: 0%;
+  max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .image-description {
@@ -69,9 +79,13 @@ transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 white-space: nowrap;
 }
 
-.image-container:hover .image-description {
+.image-container a:hover .image-description {
   opacity: 1;
   visibility: visible;
+}
+
+body.light-mode .image-container img {
+  display: block;
 }
 
 .image-container img:first-child {
@@ -144,16 +158,14 @@ body.light-mode img {
 button {
   position: absolute;
   top: 20px;
-  display: block;
-  margin: auto;
   padding: 10px 20px;
   font-size: 16px;
   background-color: grey;
   border: none;
   color: white;
   cursor: pointer;
-  align-items: center;
-  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
