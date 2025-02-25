@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (nextPageButton && pageSound) {
         nextPageButton.addEventListener("click", function (event) {
-            event.preventDefault(); // Evita il cambio di pagina immediato
+            event.preventDefault();
             pageSound.play().then(() => {
                 setTimeout(() => {
-                    window.location.href = "pagina2-2.html"; // Cambia pagina dopo il suono
-                }, 1000); // Tempo di attesa (1 secondo)
+                    window.location.href = "pagina2-2.html";
+                }, 1000);
             }).catch(error => {
                 console.error("Errore audio:", error);
-                window.location.href = "pagina2-2.html"; // Se l'audio non parte, cambia pagina subito
+                window.location.href = "pagina2-2.html";
             });
         });
     }
