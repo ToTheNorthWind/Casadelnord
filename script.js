@@ -24,9 +24,24 @@ document.querySelectorAll(".image-container a").forEach(link => {
             }, 1000);
         }).catch(error => {
             console.error("Errore audio:", error);
-            window.location.href = this.href; // Se c'è un errore, vai comunque alla pagina
+            window.location.href = this.href;
         });
     });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let button = document.getElementById("nextPageButton");
+    let audio = document.getElementById("pageSound");
+
+    if (button && audio) {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            audio.play();
+            setTimeout(() => {
+                window.location.href = "pagina2-2.html";
+            }, 1000);
+        });
+    }
 });
 
 toggleButton.addEventListener("click", function() {
