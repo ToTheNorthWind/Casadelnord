@@ -90,6 +90,11 @@ body.light-mode .image-container img {
   padding-top: 30px;
 }
 
+.pagina2 h1, 
+.pagina2 p {
+    position: relative;
+    top: 20px;
+}
 
 @media (max-width: 600px) {
   body {
