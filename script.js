@@ -29,6 +29,25 @@ document.querySelectorAll(".image-container a").forEach(link => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const nextPageButton = document.getElementById("nextPageButton");
+    const pageSound = document.getElementById("pageSound");
+
+    if (nextPageButton && pageSound) {
+        nextPageButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Evita il cambio di pagina immediato
+            pageSound.play().then(() => {
+                setTimeout(() => {
+                    window.location.href = "pagina2-2.html"; // Cambia pagina dopo il suono
+                }, 1000); // Tempo di attesa (1 secondo)
+            }).catch(error => {
+                console.error("Errore audio:", error);
+                window.location.href = "pagina2-2.html"; // Se l'audio non parte, cambia pagina subito
+            });
+        });
+    }
+});
+
 toggleButton.addEventListener("click", function() {
     body.classList.toggle("light-mode");
     imageContainer.classList.toggle("hidden")
