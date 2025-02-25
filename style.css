@@ -86,6 +86,11 @@ body.light-mode .image-container img {
   border: 1px solid blue;
 }
 
+.pagina2 {
+  padding-top: 20px;
+}
+
+
 @media (max-width: 600px) {
   body {
     height: auto;
