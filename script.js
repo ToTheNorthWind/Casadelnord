@@ -48,6 +48,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const backButton = document.getElementById("backToPage2");
+    const pageSound = document.getElementById("pageSound");
+
+    if (backButton && pageSound) {
+        backButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Evita il cambio di pagina immediato
+            pageSound.play().then(() => {
+                setTimeout(() => {
+                    window.location.href = "pagina2.html"; // Cambia pagina dopo il suono
+                }, 1000); // Tempo di attesa (1 secondo)
+            }).catch(error => {
+                console.error("Errore audio:", error);
+                window.location.href = "pagina2.html"; // Se l'audio non parte, cambia subito pagina
+            });
+        });
+    }
+});
+
 toggleButton.addEventListener("click", function() {
     body.classList.toggle("light-mode");
     imageContainer.classList.toggle("hidden")
