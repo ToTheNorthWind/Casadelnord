@@ -7,6 +7,11 @@ function playSound(src) {
     audio.play();
 }
 
+function playClickSound(src) {
+    let audio = new Audio(src);
+    audio.play();
+}
+
 toggleButton.addEventListener("click", function() {
     body.classList.toggle("light-mode");
     imageContainer.classList.toggle("hidden")
