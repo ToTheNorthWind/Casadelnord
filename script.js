@@ -29,11 +29,10 @@ document.querySelectorAll(".image-container a").forEach(link => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
     const nextPageButton = document.getElementById("nextPageButton");
-    const pageSound = document.getElementById("pageSound");
+    const pageSoundNext = document.getElementById("pageSoundNext");
 
-    if (nextPageButton && pageSound) {
+    if (nextPageButton && pageSoundNext) {
         nextPageButton.addEventListener("click", function (event) {
             event.preventDefault();
             pageSound.play().then(() => {
@@ -46,28 +45,27 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
     const backButton = document.getElementById("backToPage2");
-    const pageSound = document.getElementById("pageSound");
+    const pageSound = document.getElementById("pageSoundBack");
 
-    if (backButton && pageSound) {
+    if (backButton && pageSoundBack) {
         backButton.addEventListener("click", function (event) {
-            event.preventDefault(); // Evita il cambio di pagina immediato
-            pageSound.play().then(() => {
+            event.preventDefault();
+            pageSoundBack.play().then(() => {
                 setTimeout(() => {
-                    window.location.href = "pagina2.html"; // Cambia pagina dopo il suono
-                }, 1000); // Tempo di attesa (1 secondo)
+                    window.location.href = "pagina2.html";
+                }, 1000);
             }).catch(error => {
                 console.error("Errore audio:", error);
-                window.location.href = "pagina2.html"; // Se l'audio non parte, cambia subito pagina
+                window.location.href = "pagina2.html";
             });
         });
     }
-});
 
-toggleButton.addEventListener("click", function() {
-    body.classList.toggle("light-mode");
-    imageContainer.classList.toggle("hidden")
-});
+    if (toggleButton) {
+        toggleButton.addEventListener("click", function() {
+           body.classList.toggle("light-mode");
+           imageContainer.classList.toggle("hidden")
+        });
+    }
