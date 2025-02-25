@@ -29,21 +29,6 @@ document.querySelectorAll(".image-container a").forEach(link => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    let button = document.getElementById("nextPageButton");
-    let audio = document.getElementById("pageSound");
-
-    if (button && audio) {
-        button.addEventListener("click", function (event) {
-            event.preventDefault();
-            audio.play();
-            setTimeout(() => {
-                window.location.href = "pagina2-2.html";
-            }, 1000);
-        });
-    }
-});
-
 toggleButton.addEventListener("click", function() {
     body.classList.toggle("light-mode");
     imageContainer.classList.toggle("hidden")
