@@ -29,7 +29,7 @@ document.querySelectorAll(".image-container a").forEach(link => {
     });
 });
 
-    document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {  
     const nextPageButton = document.getElementById("nextPageButton");
     const pageSoundNext = document.getElementById("pageSoundNext");
 
@@ -47,19 +47,15 @@ document.querySelectorAll(".image-container a").forEach(link => {
             });
         });
     }
-});
 
-document.addEventListener("DomContentLoaded", function () {
     const backButton = document.getElementById("backToPage2");
     const pageSoundBack = document.getElementById("pageSoundBack");
 
-    if (backButton) {
+    if (backButton && pageSoundBack) {
         backButton.addEventListener("click", function (event) {
             event.preventDefault();
 
-
-            if (pageSoundBack) {
-                pageSoundBack.play().then(() => {
+            pageSoundBack.play().then(() => {
                 setTimeout(() => {
                     window.location.href = "pagina2.html";
                 }, 1000);
@@ -67,16 +63,13 @@ document.addEventListener("DomContentLoaded", function () {
                 console.error("Errore audio:", error);
                 window.location.href = "pagina2.html";
             });
-        } else {
-            window.location.href = "pagina2.html";
-        }
-    });
-}
+        });
+    }
 
     if (toggleButton) {
-        toggleButton.addEventListener("click", function() {
-           body.classList.toggle("light-mode");
-           imageContainer.classList.toggle("hidden")
+        toggleButton.addEventListener("click", function () {
+            body.classList.toggle("light-mode");
+            imageContainer.classList.toggle("hidden");
         });
     }
 });
