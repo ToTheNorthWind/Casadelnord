@@ -49,13 +49,17 @@ document.querySelectorAll(".image-container a").forEach(link => {
     }
 });
 
+document.addEventListener("DomContentLoaded", function () {
     const backButton = document.getElementById("backToPage2");
-    const pageSound = document.getElementById("pageSoundBack");
+    const pageSoundBack = document.getElementById("pageSoundBack");
 
-    if (backButton && pageSoundBack) {
+    if (backButton) {
         backButton.addEventListener("click", function (event) {
             event.preventDefault();
-            pageSoundBack.play().then(() => {
+
+
+            if (pageSoundBack) {
+                pageSoundBack.play().then(() => {
                 setTimeout(() => {
                     window.location.href = "pagina2.html";
                 }, 1000);
@@ -63,8 +67,11 @@ document.querySelectorAll(".image-container a").forEach(link => {
                 console.error("Errore audio:", error);
                 window.location.href = "pagina2.html";
             });
-        });
-    }
+        } else {
+            window.location.href = "pagina2.html";
+        }
+    });
+}
 
     if (toggleButton) {
         toggleButton.addEventListener("click", function() {
@@ -72,3 +79,4 @@ document.querySelectorAll(".image-container a").forEach(link => {
            imageContainer.classList.toggle("hidden")
         });
     }
+});
