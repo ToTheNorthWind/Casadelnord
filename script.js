@@ -14,14 +14,14 @@ function playClickSound(src) {
 
 document.querySelectorAll(".image-container a").forEach(link => {
     link.addEventListener("click", function(event) {
-        event.preventDefault(); // Impedisce il cambio immediato di pagina
+        event.preventDefault();
         
         let audioSrc = this.querySelector("img").getAttribute("onclick").match(/'(.*?)'/)[1];
         let audio = new Audio(audioSrc);
         audio.play().then(() => {
             setTimeout(() => {
-                window.location.href = this.href; // Dopo il suono, vai alla pagina
-            }, 500); // Aspetta mezzo secondo (puoi aumentare se il suono è più lungo)
+                window.location.href = this.href;
+            }, 1000);
         }).catch(error => {
             console.error("Errore audio:", error);
             window.location.href = this.href; // Se c'è un errore, vai comunque alla pagina
