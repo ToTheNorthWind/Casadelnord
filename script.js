@@ -29,13 +29,15 @@ document.querySelectorAll(".image-container a").forEach(link => {
     });
 });
 
+    document.addEventListener("DOMContentLoaded", function () {
     const nextPageButton = document.getElementById("nextPageButton");
     const pageSoundNext = document.getElementById("pageSoundNext");
 
     if (nextPageButton && pageSoundNext) {
         nextPageButton.addEventListener("click", function (event) {
             event.preventDefault();
-            pageSound.play().then(() => {
+
+            pageSoundNext.play().then(() => {
                 setTimeout(() => {
                     window.location.href = "pagina2-2.html";
                 }, 1000);
@@ -45,6 +47,7 @@ document.querySelectorAll(".image-container a").forEach(link => {
             });
         });
     }
+});
 
     const backButton = document.getElementById("backToPage2");
     const pageSound = document.getElementById("pageSoundBack");
