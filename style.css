@@ -91,7 +91,7 @@ body.light-mode .image-container img {
 }
 
 .image-container img:hover {
-  transform: scale(1.2);
+  transform: scale(0.5);
 }
 
 @media (max-width: 600px) {
