@@ -114,10 +114,17 @@ body.light-mode .image-container img {
 
   body.black-mode .image-container {
     display: none !important;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
   }
 
   body.light-mode .image-container {
     display:flex !important;
+    Visibility: visible;
+    opacity: 1;
+    height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
