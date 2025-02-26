@@ -112,6 +112,14 @@ body.light-mode .image-container img {
     box-sizing: border-box;
   }
 
+  body.black-mode .image-container {
+    display: none;
+  }
+
+  body.light-mode .image-container {
+    display:flex;
+  }
+
   .titolo {
     margin-top: 140px;
     text-align: center;
