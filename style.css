@@ -150,6 +150,13 @@ body.light-mode .image-container img {
   width: 100%;
 }
 
+.pagina-principale .image-container img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 300px;
+}
+
 }
 
 button {
