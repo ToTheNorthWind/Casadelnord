@@ -97,6 +97,8 @@ body.light-mode .image-container img {
  @media (max-width: 768px) {
     h1 {
         margin-top: 80px;
+        font-size: 2em;
+        text-align: center;
     }
 }
   
@@ -105,17 +107,33 @@ body.light-mode .image-container img {
     min-height: 100vh;
     overflow-y: auto;
     padding-bottom: 60px;
+    margin: 0;
   }
 
   .titolo {
     margin-top: 60px;
     text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
   }
 
   .image-container {
     flex-direction: column;
     align-items: center;
+    width: 100%;
  }
+
+ .imagr-container {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+ }
+
+ .image-container img{
+  width: 80%;
+  margin-bottom: 20px;
+ }
+
 }
 
 button {
