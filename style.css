@@ -112,7 +112,8 @@ body.light-mode .image-container img {
     box-sizing: border-box;
   }
 
-  body.black-mode .image-container {
+  body.black-mode .image-container,
+  body.black-mode .image-container img {
     display: none !important;
     visibility: hidden !important;
     height: 0 !important;
