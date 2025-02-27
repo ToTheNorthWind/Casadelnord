@@ -114,17 +114,10 @@ body.light-mode .image-container img {
 
   body.black-mode .image-container {
     display: none !important;
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
   }
 
   body.light-mode .image-container {
     display:flex !important;
-    Visibility: visible;
-    opacity: 1;
-    height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -146,37 +139,28 @@ body.light-mode .image-container img {
     text-align: justify;
   }
 
-  .image-container {
+  .image-container img {
+    display: block;
+    margin: 0 auto !important;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .pagina-principale .image-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
- }
+  }
 
- .image-container img{
-  display: block;
-  margin: 0 auto !important;
-  width: 80%;
-  max-width: 300px;
-  margin-bottom: 20px;
- }
-
- .pagina-principale .image-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.pagina-principale .image-container img {
-  display: block;
-  margin: 0 auto !important;
-  width: 80%;
-  max-width: 300px;
-}
+  .pagina-principale .image-container img {
+    display: block;
+    margin: 0 auto !important;
+    width: 80%;
+    max-width: 300px;
+  }
 
 }
 
