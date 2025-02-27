@@ -113,11 +113,8 @@ body.light-mode .image-container img {
   }
 
   body.black-mode .image-container {
-    width: 0 !important;
-    max-width: 0 !important;
     display: none !important;
     visibility: hidden !important;
-    opacity: 0 !important;
     height: 0 !important;
     overflow: hidden !important;
   }
