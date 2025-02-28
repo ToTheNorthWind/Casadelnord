@@ -73,21 +73,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-function playPageSoundAndNavigate(soundId, destination) {
-    var audio = document.getElementById(soundId);
-    if (audio) {
-      audio.play();
-      audio.onended = function() {
-        location.href = destination;
-      };
-    }
-  }
-  
-  document.querySelector('.second-button').addEventListener('click', function() {
-    playPageSoundAndNavigate('pageSoundNext', 'pagina1-2.html');
-  });
-  
-  document.querySelector('.second-button').addEventListener('click', function() {
-    playPageSoundAndNavigate('pageSoundBack', 'pagina1.html');
-  });
