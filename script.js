@@ -73,3 +73,23 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {  
+    const nextPageButton1 = document.getElementById("nextPageButton1");
+    const pageSoundNext1 = document.getElementById("pageSoundNext1");
+
+    if (nextPageButton1 && pageSoundNext1) {
+        nextPageButton1.addEventListener("click", function (event) {
+            event.preventDefault(); // Evita il cambio pagina immediato
+
+            pageSoundNext1.play().then(() => {
+                setTimeout(() => {
+                    window.location.href = "pagina1-2.html";
+                }, 1000); // Aspetta 1 secondo prima di cambiare pagina
+            }).catch(error => {
+                console.error("Errore audio:", error);
+                window.location.href = "pagina1-2.html";
+            });
+        });
+    }
+});
