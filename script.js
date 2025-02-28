@@ -75,23 +75,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function playPageSoundAndNavigate(soundId, destination) {
-    var audio = document.getElementById(soundId);
-    if (audio) {
-      audio.play();
-      audio.onended = function() {
-        location.href = destination;
-      };
-    }
+  var audio = document.getElementById(soundId);
+  if (audio) {
+    audio.play();
+    audio.onended = function() {
+      location.href = destination;
+    };
   }
-  
-  if (window.location.pathname.includes("index.html")) {
-    document.querySelector('.second-button').addEventListener('click', function() {
-      playPageSoundAndNavigate('pageSoundNext', 'pagina1-2.html');
-    });
-  }
-  
-  if (window.location.pathname.includes("pagina1-2.html")) {
-    document.querySelector('.second-button').addEventListener('click', function() {
-      playPageSoundAndNavigate('pageSoundBack', 'pagina1.html');
-    });
-  }
+}
+
+if (window.location.pathname.includes("index.html")) {
+  document.querySelector('.second-button').addEventListener('click', function(event) {
+    event.preventDefault();
+    playPageSoundAndNavigate('pageSoundNext', 'pagina1-2.html');
+  });
+}
+
+if (window.location.pathname.includes("pagina1-2.html")) {
+  document.querySelector('.second-button').addEventListener('click', function(event) {
+    event.preventDefault();
+    playPageSoundAndNavigate('pageSoundBack', 'pagina1.html');
+  });
+}
