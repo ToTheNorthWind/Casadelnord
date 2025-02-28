@@ -80,15 +80,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (nextPageButton1 && pageSoundNext1) {
         nextPageButton1.addEventListener("click", function (event) {
-            event.preventDefault(); // Evita il cambio pagina immediato
+            event.preventDefault();
 
             pageSoundNext1.play().then(() => {
                 setTimeout(() => {
                     window.location.href = "pagina1-2.html";
-                }, 1000); // Aspetta 1 secondo prima di cambiare pagina
+                }, 1000);
             }).catch(error => {
                 console.error("Errore audio:", error);
                 window.location.href = "pagina1-2.html";
+            });
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {  
+    const backButton1 = document.getElementById("backToPage1");
+    const pageSoundBack1 = document.getElementById("pageSoundBack1");
+
+    if (backButton1 && pageSoundBack1) {
+        backButton1.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            pageSoundBack1.play().then(() => {
+                setTimeout(() => {
+                    window.location.href = "pagina1.html";
+                }, 1000);
+            }).catch(error => {
+                console.error("Errore audio:", error);
+                window.location.href = "pagina1.html";
             });
         });
     }
