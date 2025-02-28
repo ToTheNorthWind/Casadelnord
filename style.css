@@ -115,16 +115,17 @@ body.light-mode .image-container img {
   body.light.mode .image-container {
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 20px;
   }
 
   body.light-mode .image-container img {
-    display: block;
+    display: block !important;
     margin: 0 auto !important;
-    width: 80%;
-    max-width: 300px;
+    width: 80% !important;
+    max-width: 300px !important;
     margin-bottom: 20px;
   }
 
